@@ -1,0 +1,17 @@
+/*Let's make sure that the dimensions of any box includes its border and padding, this gives us an easy way of sizing our elements*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    padding: 0.4rem;
+    gap: 0.6rem;
+    align-items: center;
+}
+.container > img {
+    max-width: 100%;
+}
+
